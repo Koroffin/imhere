@@ -1,0 +1,23 @@
+{
+  "name": "imhere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "(coffee --compile --output node --watch src &);node ./node/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koroffin/imhere.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Koroffin/imhere/issues"
+  },
+  "homepage": "https://github.com/Koroffin/imhere#readme",
+  "dependencies": {
+    "coffee-script": "^1.9.3"
+  }
+}
