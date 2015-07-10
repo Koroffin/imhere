@@ -26,6 +26,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-string-replace"
 
   grunt.registerTask "start", [ "shell:start" ]
-  grunt.registerTask "heroku:production", [ "compile:css" ]
+  grunt.registerTask "heroku:production", [ ]
 
 
