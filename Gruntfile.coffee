@@ -9,7 +9,8 @@ module.exports = (grunt) ->
       start:
         command: () ->
           return "./node_modules/.bin/coffee -w server.coffee"
-    compile
+
+    compile:
       css: () ->
         return "echo '123'"
 
