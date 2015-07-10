@@ -13,6 +13,8 @@ module.exports = (grunt) ->
       css: () ->
         return "echo '123'"
     heroku:
+      production: () ->
+        return "echo '123'"
       command: () ->
         return "./node_modules/.bin/coffee -w server.coffee"
 
