@@ -45,17 +45,17 @@ git push origin master
 ### /
 В корне лежат:
 
-1. *Gruntfile.coffee*
+1. `Gruntfile.coffee`
 Настройка с командами для grunt.
 
-2. *package.json*
+2. `package.json`
 JSON с описанием нашего сервера и всеми зависимостями. Служебный файл npm-менеджера.
 
-3. *Procfile*
+3. `Procfile`
 Файл для старта heroku-скрипта.
 
-4. *README.md*
+4. `README.md`
 То, что ты сейчас читаешь :)
 
-5. *server.coffee*
+5. `server.coffee`
 Собственно серверная часть нашего проекта.
