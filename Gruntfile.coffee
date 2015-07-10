@@ -9,6 +9,12 @@ module.exports = (grunt) ->
       start:
         command: () ->
           return "./node_modules/.bin/coffee -w server.coffee"
+    compile
+      css: () ->
+        return "echo '123'"
+    heroku:
+      command: () ->
+        return "./node_modules/.bin/coffee -w server.coffee"
 
   grunt.loadNpmTasks "grunt-shell"
   grunt.loadNpmTasks "grunt-spritesmith"
@@ -22,6 +28,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-string-replace"
 
   grunt.registerTask "start", [ "shell:start" ]
-  grunt.registerTask "heroku:production", [ "shell:start" ]
+  grunt.registerTask "heroku:production", [ "compile:css" ]
 
 
