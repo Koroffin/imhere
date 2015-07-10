@@ -12,11 +12,6 @@ module.exports = (grunt) ->
     compile
       css: () ->
         return "echo '123'"
-    heroku:
-      production: () ->
-        return "echo '123'"
-      command: () ->
-        return "./node_modules/.bin/coffee -w server.coffee"
 
   grunt.loadNpmTasks "grunt-shell"
   grunt.loadNpmTasks "grunt-spritesmith"
