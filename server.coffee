@@ -28,6 +28,7 @@ io.on 'connection', (client) ->
     clearTimeout timer
     console.log 'User '+client.id+' disconnected!'
     client.broadcast.emit 'message', 'User '+client.id+' disconnected!'
+  client.emit 'message', 'Hello, client '+client.id
   timer = setTimeout () ->
     client.emit 'message', 'This is test message of Socket IO for client '+client.id
   , 2000
