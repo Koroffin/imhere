@@ -19,9 +19,9 @@
   "homepage": "https://github.com/Koroffin/imhere#readme",
   "dependencies": {
     "coffee-script": "^1.9.3",
-    "grunt": "~0.4.5"
-  },
-  "devDependencies": {
+    "express": "~4.13.1",
+
+    "grunt": "~0.4.5",
     "grunt-cli": "~0.1.13",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "^0.12.0",
@@ -33,5 +33,6 @@
     "grunt-shell": "^1.1.2",
     "grunt-spritesmith": "^4.2.0",
     "grunt-string-replace": "^1.0.0"
-  }
+  },
+  "devDependencies": {}
 }
