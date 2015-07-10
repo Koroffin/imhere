@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/js/libs/socket.io.js"></script>
+    <script src="/js/libs/jquery.js"></script>
+    <script>
+        (function () {
+            var socket = io();
+            socket.on('message', function (msg) {
+                document.write(msg+'<br>')
+            });
+        })();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
