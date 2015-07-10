@@ -8,7 +8,7 @@ module.exports = (grunt) ->
     shell:
       start:
         command: () ->
-          return "coffee -w server.coffee"
+          return "./node_modules/.bin/coffee -w server.coffee"
 
   grunt.loadNpmTasks "grunt-shell"
   grunt.loadNpmTasks "grunt-spritesmith"
