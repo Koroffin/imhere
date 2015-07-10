@@ -11,7 +11,7 @@
   app.use(express["static"](__dirname + '/public'));
 
   app.get('/', function(req, res) {
-    return res.send('Hello World!!!');
+    return res.send('Hello World!!! I am heroku app!');
   });
 
   server = app.listen(app.get('port'), function() {

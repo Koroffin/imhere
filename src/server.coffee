@@ -6,7 +6,7 @@ app.set 'port', (process.env.PORT || 5000)
 app.use express.static __dirname + '/public'
 
 app.get '/', (req, res) ->
-  res.send('Hello World!!!')
+  res.send('Hello World!!! I am heroku app!')
 
 server = app.listen app.get('port'), () ->
 
