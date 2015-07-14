@@ -1,0 +1,9 @@
+{
+  "client": "mysql",
+  "connection": {
+    "host": "sql4.freemysqlhosting.net",
+    "database": "sql483708",
+    "user": "sql483708",
+    "password": "nU7*uP3*"
+  }
+}

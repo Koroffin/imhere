@@ -3,6 +3,8 @@ socket_io = require('socket.io')
 
 app = express()
 
+dbConnector = require('./my_modules/database_connector/database.coffee')(app)
+
 # configure app
 app.set 'port', (process.env.PORT || 5000)
 app.use express.static __dirname + '/public'
@@ -16,6 +18,9 @@ server = app.listen app.get('port'), () ->
   host = server.address().address
   port = server.address().port
   console.log('Example app listening at http://%s:%s', host, port)
+
+# Database
+dbConnector.init()
 
 # Socket.io
 io = socket_io(server)
